@@ -1,80 +1,94 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nath Coiffure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
   <style>
     body {
+      font-family: 'Libre Baskerville', serif;
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
       background-color: #fefef3;
       color: #333;
     }
     header {
-      background-color: #cfa0e9;
-      padding: 2rem;
       text-align: center;
-      color: white;
+      padding: 2rem;
     }
     h1 {
-      margin: 0;
       font-size: 2.5rem;
+      margin: 0;
     }
-    h2 {
-      color: #C17881;
+    .slogan {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #666;
     }
-    .section {
-      padding: 2rem;
+    .presentation {
+      font-size: 1.1rem;
+      text-align: center;
+      margin: 2rem auto;
       max-width: 800px;
-      margin: auto;
+      padding: 0 1rem;
+      font-style: italic;
+    }
+    .tarifs {
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #fefef3;
+      border-radius: 8px;
+    }
+    .tarifs h2 {
+      text-align: center;
+      margin-bottom: 1rem;
     }
     .tarifs ul {
       list-style: none;
       padding: 0;
+      font-size: 1.05rem;
     }
     .tarifs li {
-      background-color: #8EFFF0;
       margin: 0.5rem 0;
-      padding: 0.8rem;
-      border-radius: 10px;
     }
-    .contacts a {
+    .contact {
+      text-align: center;
+      margin: 2rem auto;
+    }
+    .contact a, .contact button {
       display: inline-block;
-      margin: 0.5rem 1rem 0.5rem 0;
-      text-decoration: none;
-      color: #fff;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
       background-color: #C17881;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-    }
-    .contacts a:hover {
-      opacity: 0.85;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
     }
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: #cfa0e9;
-      color: white;
+      font-size: 0.9rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Nath Coiffure</h1>
-    <p>Coiffure privée à domicile</p>
+    <div class="slogan">Coiffure privée à domicile</div>
   </header>
 
-  <section class="section presentation">
-    <h2>Présentation</h2>
-    <p>
-      "Le cycle de vie d'un papillon, qui passe de la chenille à la chrysalide, puis au papillon,
-      nous entraîne vers l'image d'une transformation et d'une métamorphose toute en légèreté."
-    </p>
-  </section>
+  <div class="presentation">
+    Le cycle de vie d'un papillon, qui passe de la chenille à la chrysalide, puis au papillon, nous entraîne vers l'image d'une transformation et d'une métamorphose toute en légèreté.
+  </div>
 
-  <section class="section tarifs">
+  <section class="tarifs">
     <h2>Tarifs</h2>
     <ul>
       <li>Coupe : 25€</li>
@@ -83,22 +97,18 @@
       <li>Coloration : à partir de 40€ (sur devis)</li>
       <li>Décoloration : 50€</li>
       <li>Patine créative : 25€</li>
-      <li>Service mèche : à partir de 120€</li>
+      <li>Mèches : à partir de 120€</li>
     </ul>
   </section>
 
-  <section class="section contacts">
-    <h2>Contact</h2>
-    <a href="https://www.instagram.com/_nathcoiffure_/" target="_blank">Instagram</a>
-    <a href="https://mail.google.com/mail/?view=cm&to=nathcoiffure30@gmail.com" target="_blank" rel="noopener noreferrer">
-  📧 Envoyer un mail via Gmail
-</a>
-
-    <a href="tel:0606738444">Appeler : 06 06 73 84 44</a>
-  </section>
+  <div class="contact">
+    <a href="https://instagram.com/_nathcoiffure_" target="_blank">📸 Instagram</a>
+    <a href="mailto:nathcoiffure30@gmail.com">📧 Email</a>
+    <a href="tel:0606738444">📞 Appeler</a>
+  </div>
 
   <footer>
-    &copy; 2025 Nath Coiffure - Tous droits réservés
+    © 2025 Nath Coiffure - Tous droits réservés
   </footer>
 </body>
 </html>
