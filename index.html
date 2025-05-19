@@ -16,6 +16,8 @@
     header {
       text-align: center;
       padding: 2rem;
+      background-color: #cfa0e9; /* violet clair */
+      color: white;
     }
     h1 {
       font-size: 2.5rem;
@@ -24,7 +26,7 @@
     .slogan {
       font-size: 1.2rem;
       margin-top: 0.5rem;
-      color: #666;
+      font-family: Arial, sans-serif;
     }
     .presentation {
       font-size: 1.1rem;
@@ -38,17 +40,21 @@
       max-width: 600px;
       margin: 2rem auto;
       padding: 2rem;
-      background-color: #cfa0e9;
+      background-color: #fefef3; /* blanc cassé */
       border-radius: 8px;
+      font-family: 'Libre Baskerville', serif;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
     .tarifs h2 {
       text-align: center;
       margin-bottom: 1rem;
+      color: #8EFFF0; /* bleu clair */
     }
     .tarifs ul {
       list-style: none;
       padding: 0;
       font-size: 1.05rem;
+      color: #333;
     }
     .tarifs li {
       margin: 0.5rem 0;
@@ -64,15 +70,21 @@
       font-size: 1rem;
       border: none;
       border-radius: 5px;
-      background-color: #C17881;
+      background-color: #C17881; /* vieux rose */
       color: white;
       text-decoration: none;
       cursor: pointer;
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s ease;
     }
-    .contact div.phone {
+    .contact a:hover {
+      background-color: #a65e63;
+    }
+    .contact .phone {
       margin-top: 1rem;
       font-size: 1.1rem;
       color: #333;
+      font-family: Arial, sans-serif;
     }
     footer {
       text-align: center;
@@ -107,3 +119,12 @@
 
   <div class="contact">
     <a href="https://instagram.com/_nathcoiffure_" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
+    <a href="https://mail.google.com/mail/?view=cm&to=nathcoiffure30@gmail.com" target="_blank" rel="noopener noreferrer">📧 Envoyer un mail via Gmail</a>
+    <div class="phone">📞 06 06 73 84 44</div>
+  </div>
+
+  <footer>
+    © 2025 Nath Coiffure - Tous droits réservés
+  </footer>
+</body>
+</html>
